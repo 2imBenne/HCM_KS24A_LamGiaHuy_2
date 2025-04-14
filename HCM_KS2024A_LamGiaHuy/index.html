@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <h1 class="title">Quản Lý Danh Mục Sách</h1>
+    <div class="container">
+       
+        <div class="contentBox">
+            <div class="showContent">
+                <div class="inputName">
+                    <label for="name">Tên sách:</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="inputAuthor">
+                    <label for="author">Tác giả:</label>
+                    <input type="text" id="author">
+                </div>
+                <div class="inputYear">
+                    <label for="year">Năm xuất bản:</label>
+                    <input type="text" id="year">
+                </div>
+                <div class="inputBookType">
+                    <label for="bookType">Thể loại:</label>
+                    <input type="text" id="bookType">
+                </div>
+                <button class="btn btn-primary" style="width:100% ; margin:20px;" onclick="addBook()">Thêm sách</button>
+                <input id="searchInput" type="text" placeholder="Tìm kiếm theo tên sách...">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Tên sách</th>
+                            <th scope="col">Tác giả</th>
+                            <th scope="col">Năm</th>
+                            <th scope="col">Thể loại</th>
+                            <th scope="col">Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Harry Potter</td>
+                            <td>JK Rowling</td>
+                            <td>1995</td>
+                            <td>Fiction</td>
+                            <td>
+                                <button>Sửa</button>
+                                <button>Xoá</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
